@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support Host Alert</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <p class="eyebrow">Support Host Alert</p>
+        <h1>Cruise and Wes watcher</h1>
+        <p class="subtle">Repeats a sound until you acknowledge the match.</p>
+      </header>
+
+      <section class="card">
+        <label class="toggle-row" for="enabledToggle">
+          <span>
+            <strong>Detection</strong>
+            <small id="statusText">Loading...</small>
+          </span>
+          <input id="enabledToggle" type="checkbox" />
+        </label>
+
+        <button id="ackButton" class="primary" type="button">Acknowledge alert</button>
+
+        <div class="details">
+          <div>
+            <span class="label">Watching</span>
+            <div id="hostList" class="value">Cruise, Wes</div>
+          </div>
+          <div>
+            <span class="label">Latest match</span>
+            <div id="latestMatch" class="value">None</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
